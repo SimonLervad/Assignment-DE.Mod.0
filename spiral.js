@@ -1,6 +1,6 @@
 import {Canvas} from "./modules/Canvas.js";
 import {$} from "./modules/id.js";
-import {Shape} from "./modules/shapes.js";
+import {Shape} from "./modules/shapesSpiral.js";
 
 let shapes = [];
 var canvas;

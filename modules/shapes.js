@@ -1,6 +1,3 @@
-let hori = 0;
-let vert = 500;
-
 let Shape = {
     init(cv, x, y, width, height, color) {
         this.ctx = cv.context;
@@ -17,16 +14,16 @@ let Shape = {
     },
 
     move() {
-        if (this.y === hori) {
+        if (this.y === 0) {
             this.x++;
         }
-        if (this.x + this.width === vert) {
+        if (this.x + this.width === 500) {
             this.y++;
         }
-        if (this.y + this.height === vert) {
+        if (this.y + this.height === 500) {
             this.x--;
         }
-        if (this.x === hori) {
+        if (this.x === 0) {
             this.y--;
         }
     }
